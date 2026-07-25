@@ -27,7 +27,7 @@ Everything below is open source.
 ## 03 · STACK
 
 ```
-PROCESS   Deal-Grove oxidation, ion implantation, plasma etch, defect-limited yield
+PROCESS   Deal-Grove oxidation, ion implantation, plasma etch, defect yield
 LAYOUT    GDSII, KLayout, electron-beam lithography, OPC
 CIRCUITS  SKY130 open PDK, ngspice, analog and mixed-signal
 MODELS    NumPy, SciPy, XGBoost, SHAP, Bayesian process-window optimization
