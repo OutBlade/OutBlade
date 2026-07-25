@@ -1,47 +1,290 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="Sebastian Kallfelz, semiconductor process engineering">
-  <style>
-    .ink   { fill: #0f1419; }
-    .muted { fill: #6b7280; }
-    .rule  { stroke: #d8dee4; stroke-width: 1; }
-    .scan  { fill: #0b3d91; }
-    @media (prefers-color-scheme: dark) {
-      .ink   { fill: #e6edf3; }
-      .muted { fill: #8b949e; }
-      .rule  { stroke: #30363d; }
-      .scan  { fill: #58a6ff; }
-    }
-    .kicker { font: 500 11px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.22em; }
-    .name   { font: 700 58px 'Helvetica Neue', Arial, sans-serif; letter-spacing: -1.6px; }
-    .sub    { font: 400 12px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.14em; }
-    .read   { font: 400 11px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.12em; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" role="img" aria-label="EUV photolithography scanner: tin plasma source, collector, illuminator, reflective reticle, projection optics, slit scan exposure and metrology">
+<title>EUV photolithography exposure cycle</title>
 
-  <line class="rule" x1="0" y1="1" x2="900" y2="1"/>
+<defs>
+  <radialGradient id="gPlasma">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="32%" stop-color="#7aa2ff" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="gSlit" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="45%" stop-color="#7aa2ff"/>
+    <stop offset="100%" stop-color="#a855f7"/>
+  </linearGradient>
+  <filter id="fSoft" x="-70%" y="-70%" width="240%" height="240%">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
+  <filter id="fHot" x="-70%" y="-70%" width="240%" height="240%">
+    <feGaussianBlur stdDeviation="2"/>
+  </filter>
 
-  <text class="kicker muted" x="0" y="32">SEMICONDUCTOR PROCESS ENGINEERING</text>
-  <text class="kicker muted" x="900" y="32" text-anchor="end">KARLSRUHE / DE</text>
-
-  <!-- stepper scan pass -->
-  <g clip-path="url(#field)">
-    <rect class="scan" x="-140" y="52" width="120" height="118" opacity="0.06">
-      <animate attributeName="x" from="-140" to="900" dur="6s" begin="0s" repeatCount="indefinite"/>
-    </rect>
-    <rect class="scan" x="-22" y="52" width="1.5" height="118" opacity="0.45">
-      <animate attributeName="x" from="-22" to="1018" dur="6s" begin="0s" repeatCount="indefinite"/>
-    </rect>
+  <g id="ml">
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="-14" y1="-2.2" x2="14" y2="-2.2" stroke="currentColor" stroke-width="0.6" opacity="0.7"/>
+    <line x1="-14" y1="-4.1" x2="14" y2="-4.1" stroke="currentColor" stroke-width="0.6" opacity="0.55"/>
+    <line x1="-14" y1="-6.0" x2="14" y2="-6.0" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+    <line x1="-14" y1="-7.9" x2="14" y2="-7.9" stroke="currentColor" stroke-width="0.6" opacity="0.25"/>
   </g>
-  <defs>
-    <clipPath id="field"><rect x="0" y="52" width="900" height="118"/></clipPath>
-  </defs>
 
-  <text class="name ink" x="0" y="126">SEBASTIAN KALLFELZ</text>
+  <g id="chipGeom" stroke="currentColor" fill="none" stroke-width="1.1">
+    <path d="M736 261v22M740 261v22M744 261v22M748 261v22M752 261v22M756 261v22M760 261v22M764 261v22M768 261v22M772 261v22M776 261v22M780 261v22M784 261v22M788 261v22M792 261v22M796 261v22"/>
+    <path d="M736 286h60M736 286v-3M796 286v-3"/>
+    <g fill="currentColor" stroke="none">
+      <rect x="806" y="262" width="4" height="4"/><rect x="814" y="262" width="4" height="4"/><rect x="822" y="262" width="4" height="4"/><rect x="830" y="262" width="4" height="4"/>
+      <rect x="806" y="271" width="4" height="4"/><rect x="814" y="271" width="4" height="4"/><rect x="822" y="271" width="4" height="4"/><rect x="830" y="271" width="4" height="4"/>
+      <rect x="806" y="280" width="4" height="4"/><rect x="814" y="280" width="4" height="4"/><rect x="822" y="280" width="4" height="4"/><rect x="830" y="280" width="4" height="4"/>
+    </g>
+    <path d="M842 264h24M842 273h24M842 282h24M846 264v18M858 273v9M866 264v18"/>
+  </g>
 
-  <text class="sub muted" x="0" y="160">KIT ETIT B.SC. &#160;/&#160; IMT KORVINK GROUP &#160;/&#160; LENZ LENS NMR</text>
+  <g id="absorber" stroke="currentColor" stroke-width="2.4">
+    <path d="M448 94v5M456 94v5M462 94v5M474 94v5M480 94v5M492 94v5M500 94v5M506 94v5M518 94v5M528 94v5M534 94v5M546 94v5M554 94v5M566 94v5M574 94v5M586 94v5M596 94v5M602 94v5M614 94v5M622 94v5M634 94v5M642 94v5M654 94v5M662 94v5M674 94v5M684 94v5M690 94v5M702 94v5M710 94v5M722 94v5M730 94v5M742 94v5M750 94v5M762 94v5M770 94v5M782 94v5M792 94v5M798 94v5M810 94v5M818 94v5M830 94v5M838 94v5M850 94v5M858 94v5M870 94v5M880 94v5M886 94v5M898 94v5M906 94v5M918 94v5M926 94v5M938 94v5M946 94v5M958 94v5M966 94v5M978 94v5M988 94v5M994 94v5M1006 94v5M1014 94v5M1026 94v5M1034 94v5M1046 94v5M1054 94v5M1066 94v5M1074 94v5M1086 94v5"/>
+  </g>
 
-  <line class="rule" x1="0" y1="200" x2="900" y2="200"/>
+  <clipPath id="clipRet"><rect x="442" y="92" width="136" height="9"/></clipPath>
+  <clipPath id="clipLat">
+    <rect x="730" y="254" width="0" height="38">
+      <animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;134;134" keyTimes="0;0.679;0.893;1"/>
+    </rect>
+  </clipPath>
+  <clipPath id="clipDev">
+    <rect x="730" y="254" width="0" height="38">
+      <animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;0;110;110" keyTimes="0;0.679;0.708;0.893;1"/>
+    </rect>
+  </clipPath>
+</defs>
 
-  <text class="read muted" x="0" y="226">
-    NODE 130 nm &#183; &#955; 365 nm &#183; D&#8320; 0.12 cm&#8315;&#178; &#183; Y 0.87
-  </text>
-  <text class="read muted" x="900" y="226" text-anchor="end">OPEN PDK &#183; SKY130</text>
+<style>
+  .s    { stroke:#6b7280; fill:none; }
+  .rule { stroke:#d8dee4; stroke-width:1; }
+  .dim  { fill:#eaeef2; }
+  .chipDev { color:#6b7280; }
+  .mlc  { color:#6b7280; }
+  .lbl  { fill:#6b7280; font:400 9px 'SFMono-Regular',Consolas,'Liberation Mono',monospace; letter-spacing:0.18em; }
+  .kick { fill:#6b7280; font:500 11px 'SFMono-Regular',Consolas,'Liberation Mono',monospace; letter-spacing:0.22em; }
+  .sm   { fill:#6b7280; font:400 8px 'SFMono-Regular',Consolas,'Liberation Mono',monospace; letter-spacing:0.12em; }
+  @media (prefers-color-scheme: dark) {
+    .s    { stroke:#8b949e; }
+    .rule { stroke:#30363d; }
+    .dim  { fill:#21262d; }
+    .chipDev { color:#8b949e; }
+    .mlc  { color:#8b949e; }
+    .lbl, .kick, .sm { fill:#8b949e; }
+  }
+</style>
+
+<line class="rule" x1="0" y1="1" x2="900" y2="1"/>
+<text class="kick" x="0" y="24">EUV PHOTOLITHOGRAPHY</text>
+<text class="kick" x="900" y="24" text-anchor="end">NXE:3400 CLASS</text>
+
+<g>
+  <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;0.029;0.957;1"/>
+
+  <rect class="dim" x="22" y="140" width="232" height="110" rx="3" opacity="0.55"/>
+  <rect class="s" x="22" y="140" width="232" height="110" rx="3" stroke-dasharray="3 3" opacity="0.8"/>
+
+  <path class="s" d="M52 154 Q28 172 30 190" stroke-width="2"/>
+  <path class="s" d="M30 202 Q28 220 52 238" stroke-width="2"/>
+
+  <rect class="s" x="88" y="142" width="14" height="8"/>
+  <line class="s" x1="95" y1="150" x2="95" y2="156" stroke-dasharray="1 2"/>
+
+  <circle cx="95" cy="152" r="3" fill="#7aa2ff">
+    <animate attributeName="cy" dur="14s" repeatCount="indefinite" values="152;152;196;196;196" keyTimes="0;0.007;0.071;0.086;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.007;0.071;0.086;1"/>
+  </circle>
+
+  <ellipse cx="95" cy="196" rx="8" ry="2.6" fill="#7aa2ff" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.85;0.85;0;0" keyTimes="0;0.079;0.093;0.129;0.15;1"/>
+  </ellipse>
+
+  <line x1="24" y1="196" x2="86" y2="196" stroke="#a855f7" stroke-width="1.6" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.9;0;0;0.95;0;0" keyTimes="0;0.061;0.071;0.086;0.107;0.118;0.136;1"/>
+  </line>
+
+  <circle cx="95" cy="196" r="0" fill="url(#gPlasma)" opacity="0">
+    <animate attributeName="r" dur="14s" repeatCount="indefinite" values="0;0;26;30;30" keyTimes="0;0.129;0.164;0.186;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.129;0.15;0.186;1"/>
+  </circle>
+  <circle cx="95" cy="196" r="4" fill="#ffffff" opacity="0" filter="url(#fHot)">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.129;0.143;0.179;1"/>
+  </circle>
+
+  <g opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;1" keyTimes="0;0.186;0.257;0.95;1"/>
+    <polygon points="52,155 52,237 254,196" fill="#7aa2ff" opacity="0.10"/>
+    <line x1="52" y1="158" x2="254" y2="196" stroke="#7aa2ff" stroke-width="0.8" opacity="0.55"/>
+    <line x1="46" y1="196" x2="254" y2="196" stroke="#7aa2ff" stroke-width="0.8" opacity="0.55"/>
+    <line x1="52" y1="234" x2="254" y2="196" stroke="#7aa2ff" stroke-width="0.8" opacity="0.55"/>
+    <path class="s" d="M250 192v8M258 192v8" stroke-width="1"/>
+  </g>
+
+  <text class="lbl" x="0" y="58" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.007;0.029;0.214;0.25;1"/>Sn DROPLET  50 kHz</text>
+  <text class="lbl" x="0" y="74" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.057;0.079;0.214;0.25;1"/>CO2 PREPULSE</text>
+  <text class="lbl" x="0" y="90" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.125;0.147;0.214;0.25;1"/>PLASMA  T ~ 220,000 K</text>
+  <text class="lbl" x="0" y="106" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.143;0.164;0.25;0.286;1"/>lambda = 13.5 nm</text>
+  <text class="lbl" x="0" y="122" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.021;0.043;0.45;0.48;1"/>VACUUM  10^-6 mbar</text>
+  <text class="lbl" x="22" y="266" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.214;0.243;0.339;0.375;1"/>INTERMEDIATE FOCUS</text>
+
+  <g class="mlc">
+    <use href="#ml" transform="translate(306,170) rotate(-28)"/>
+    <use href="#ml" transform="translate(366,228) rotate(24)"/>
+    <use href="#ml" transform="translate(424,172) rotate(-32)"/>
+  </g>
+
+  <line x1="254" y1="196" x2="306" y2="170" stroke="#7aa2ff" stroke-width="1.4" stroke-dasharray="59" stroke-dashoffset="59" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="59;59;0;0" keyTimes="0;0.307;0.343;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1" keyTimes="0;0.307;0.343;1"/>
+  </line>
+  <line x1="306" y1="170" x2="366" y2="228" stroke="#7aa2ff" stroke-width="1.4" stroke-dasharray="84" stroke-dashoffset="84" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="84;84;0;0" keyTimes="0;0.343;0.379;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.72;0.72" keyTimes="0;0.343;0.379;1"/>
+  </line>
+  <line x1="366" y1="228" x2="424" y2="172" stroke="#7aa2ff" stroke-width="1.4" stroke-dasharray="81" stroke-dashoffset="81" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="81;81;0;0" keyTimes="0;0.379;0.414;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.52;0.52" keyTimes="0;0.379;0.414;1"/>
+  </line>
+  <line x1="424" y1="172" x2="486" y2="90" stroke="#7aa2ff" stroke-width="1.4" stroke-dasharray="103" stroke-dashoffset="103" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="103;103;0;0" keyTimes="0;0.414;0.464;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.38;0.38" keyTimes="0;0.414;0.464;1"/>
+  </line>
+
+  <g opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.371;0.4;0.55;0.59;1"/>
+    <circle class="s" cx="330" cy="62" r="19"/>
+    <circle cx="330" cy="53" r="4.6" fill="#7aa2ff"/>
+    <circle cx="330" cy="71" r="4.6" fill="#7aa2ff"/>
+    <text class="lbl" x="356" y="66">DIPOLE PUPIL</text>
+  </g>
+  <text class="lbl" x="278" y="266" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.32;0.35;0.5;0.54;1"/>Mo/Si MULTILAYER  x11</text>
+
+  <rect class="dim" x="436" y="64" width="148" height="7" rx="1.5"/>
+  <rect class="s" x="436" y="64" width="148" height="7" rx="1.5"/>
+  <path class="s" d="M470 67.5h-24M446 67.5l5-2.6M446 67.5l5 2.6" stroke-width="1.1" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.686;0.893;0.92;1"/>
+  </path>
+  <text class="sm" x="584" y="70" text-anchor="end" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.686;0.893;0.92;1"/>RETICLE STAGE  4v</text>
+
+  <rect class="dim" x="440" y="76" width="140" height="14"/>
+  <rect class="s" x="440" y="76" width="140" height="14"/>
+  <g class="s" stroke-width="0.5" opacity="0.6">
+    <line x1="441" y1="79" x2="579" y2="79"/><line x1="441" y1="82" x2="579" y2="82"/><line x1="441" y1="85" x2="579" y2="85"/><line x1="441" y1="88" x2="579" y2="88"/>
+  </g>
+  <line class="s" x1="440" y1="90" x2="580" y2="90" stroke-width="1.6"/>
+
+  <g clip-path="url(#clipRet)" class="mlc">
+    <g>
+      <animateTransform attributeName="transform" type="translate" dur="14s" repeatCount="indefinite" values="0,0;0,0;-520,0;-520,0" keyTimes="0;0.679;0.893;1"/>
+      <use href="#absorber"/>
+    </g>
+  </g>
+
+  <text class="lbl" x="600" y="60" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.45;0.48;0.6;0.64;1"/>REFLECTIVE RETICLE</text>
+
+  <g opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.464;0.5;0.6;0.64;1"/>
+    <line class="s" x1="770" y1="86" x2="812" y2="86" stroke-width="1.4"/>
+    <line class="s" x1="791" y1="86" x2="791" y2="50" stroke-dasharray="2 2" opacity="0.7"/>
+    <line x1="787" y1="50" x2="791" y2="86" stroke="#7aa2ff" stroke-width="1.1"/>
+    <line x1="791" y1="86" x2="795" y2="50" stroke="#7aa2ff" stroke-width="1.1" opacity="0.7"/>
+    <path class="s" d="M789 62a4 4 0 0 0 4 0" stroke-width="0.8"/>
+    <text class="sm" x="818" y="70">CRAO 6 deg</text>
+  </g>
+
+  <g class="mlc">
+    <use href="#ml" transform="translate(596,116) rotate(14)"/>
+    <use href="#ml" transform="translate(688,137) rotate(196)"/>
+    <use href="#ml" transform="translate(596,158) rotate(14)"/>
+    <use href="#ml" transform="translate(688,179) rotate(196)"/>
+    <use href="#ml" transform="translate(596,200) rotate(14)"/>
+    <use href="#ml" transform="translate(688,221) rotate(196)"/>
+  </g>
+
+  <line x1="486" y1="90" x2="596" y2="116" stroke="#7aa2ff" stroke-width="1.3" stroke-dasharray="113" stroke-dashoffset="113" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="113;113;0;0" keyTimes="0;0.464;0.514;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.34;0.34" keyTimes="0;0.464;0.514;1"/>
+  </line>
+  <line x1="596" y1="116" x2="688" y2="137" stroke="#7aa2ff" stroke-width="1.3" stroke-dasharray="95" stroke-dashoffset="95" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="95;95;0;0" keyTimes="0;0.514;0.536;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.3;0.3" keyTimes="0;0.514;0.536;1"/>
+  </line>
+  <line x1="688" y1="137" x2="596" y2="158" stroke="#7aa2ff" stroke-width="1.3" stroke-dasharray="95" stroke-dashoffset="95" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="95;95;0;0" keyTimes="0;0.536;0.557;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.27;0.27" keyTimes="0;0.536;0.557;1"/>
+  </line>
+  <line x1="596" y1="158" x2="688" y2="179" stroke="#7aa2ff" stroke-width="1.3" stroke-dasharray="95" stroke-dashoffset="95" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="95;95;0;0" keyTimes="0;0.557;0.579;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.24;0.24" keyTimes="0;0.557;0.579;1"/>
+  </line>
+  <line x1="688" y1="179" x2="596" y2="200" stroke="#7aa2ff" stroke-width="1.3" stroke-dasharray="95" stroke-dashoffset="95" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="95;95;0;0" keyTimes="0;0.579;0.6;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.21;0.21" keyTimes="0;0.579;0.6;1"/>
+  </line>
+  <line x1="596" y1="200" x2="688" y2="221" stroke="#7aa2ff" stroke-width="1.3" stroke-dasharray="95" stroke-dashoffset="95" opacity="0">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite" values="95;95;0;0" keyTimes="0;0.6;0.629;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.19;0.19" keyTimes="0;0.6;0.629;1"/>
+  </line>
+
+  <g opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.55;0.586;0.75;0.79;1"/>
+    <text class="lbl" x="520" y="250">6 ASPHERIC MIRRORS</text>
+    <text class="lbl" x="520" y="264">4x REDUCTION</text>
+    <text class="lbl" x="520" y="278">NA 0.33</text>
+  </g>
+
+  <polygon points="676,228 700,228 739,256 733,256" fill="#7aa2ff" opacity="0">
+    <animate attributeName="points" dur="14s" repeatCount="indefinite"
+      values="676,228 700,228 739,256 733,256;676,228 700,228 739,256 733,256;676,228 700,228 869,256 863,256;676,228 700,228 869,256 863,256"
+      keyTimes="0;0.679;0.893;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.16;0.16;0;0" keyTimes="0;0.643;0.679;0.893;0.914;1"/>
+  </polygon>
+
+  <rect class="dim" x="730" y="256" width="140" height="32"/>
+  <rect class="s" x="730" y="256" width="140" height="32"/>
+
+  <g clip-path="url(#clipLat)" style="color:#7aa2ff" opacity="0.6"><use href="#chipGeom"/></g>
+  <g clip-path="url(#clipDev)" class="chipDev"><use href="#chipGeom"/></g>
+
+  <rect x="729" y="250" width="14" height="44" fill="#7aa2ff" opacity="0" filter="url(#fSoft)">
+    <animate attributeName="x" dur="14s" repeatCount="indefinite" values="729;729;859;859" keyTimes="0;0.679;0.893;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.45;0.45;0;0" keyTimes="0;0.657;0.686;0.893;0.914;1"/>
+  </rect>
+  <rect x="734.7" y="256" width="2.6" height="32" fill="url(#gSlit)" opacity="0">
+    <animate attributeName="x" dur="14s" repeatCount="indefinite" values="734.7;734.7;864.7;864.7" keyTimes="0;0.679;0.893;1"/>
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.686;0.893;0.914;1"/>
+  </rect>
+
+  <rect class="dim" x="712" y="294" width="176" height="7" rx="1.5"/>
+  <rect class="s" x="712" y="294" width="176" height="7" rx="1.5"/>
+  <path class="s" d="M722 297.5h24M746 297.5l-5-2.6M746 297.5l-5 2.6" stroke-width="1.1" opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.686;0.893;0.92;1"/>
+  </path>
+  <text class="sm" x="756" y="300" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.686;0.893;0.92;1"/>WAFER STAGE  v</text>
+
+  <text class="lbl" x="730" y="248" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.686;0.879;0.907;1"/>SLIT SCAN</text>
+
+  <g opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.893;0.921;0.971;1"/>
+    <text class="sm" x="900" y="316" text-anchor="end">CD 13 nm      OVERLAY &lt; 1.1 nm      FIELD 26 x 33 mm</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.9;0" keyTimes="0;0.936;0.957;1"/>
+    <animateTransform attributeName="transform" type="translate" dur="14s" repeatCount="indefinite" values="0,0;0,0;-46,0;-46,0" keyTimes="0;0.936;0.993;1"/>
+    <path class="s" d="M786 240h-30M756 240l6-3M756 240l6 3" stroke-width="1.1"/>
+    <text class="sm" x="792" y="243">STEP</text>
+  </g>
+</g>
+
+<text class="sm" x="0" y="332"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.207;0.229;1"/>01  SOURCE</text>
+<text class="sm" x="0" y="332" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.207;0.229;0.307;0.329;1"/>02  COLLECTOR</text>
+<text class="sm" x="0" y="332" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.307;0.329;0.45;0.472;1"/>03  ILLUMINATOR</text>
+<text class="sm" x="0" y="332" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.45;0.472;0.55;0.572;1"/>04  RETICLE</text>
+<text class="sm" x="0" y="332" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.55;0.572;0.657;0.679;1"/>05  PROJECTION OPTICS</text>
+<text class="sm" x="0" y="332" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.657;0.679;0.871;0.893;1"/>06  SCAN AND EXPOSE</text>
+<text class="sm" x="0" y="332" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.871;0.893;0.971;1"/>07  METROLOGY</text>
+
+<text class="sm" x="900" y="332" text-anchor="end">EXPOSURE CYCLE  14 s</text>
+<line class="rule" x1="0" y1="339" x2="900" y2="339"/>
 </svg>
