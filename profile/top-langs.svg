@@ -1,70 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="268" viewBox="0 0 400 268" role="img" aria-label="Top languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-label="Language distribution across public repositories">
   <style>
-    .card { fill: #ffffff; stroke: #d0d7de; }
-    .title { fill: #0b3d91; font: 600 15px 'Segoe UI', Ubuntu, Sans-Serif; }
-    .lbl { fill: #24292f; font: 500 12px 'Segoe UI', Ubuntu, Sans-Serif; }
-    .pct { fill: #57606a; font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .muted { fill: #6b7280; }
+    .rule  { stroke: #d8dee4; stroke-width: 1; }
     .track { fill: #eaeef2; }
     @media (prefers-color-scheme: dark) {
-      .card { fill: #0d1117; stroke: #30363d; }
-      .title { fill: #2f81f7; }
-      .lbl { fill: #c9d1d9; }
-      .pct { fill: #8b949e; }
+      .muted { fill: #8b949e; }
+      .rule  { stroke: #30363d; }
       .track { fill: #21262d; }
     }
+    .kicker { font: 500 11px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.22em; }
+    .leg    { font: 400 10px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.08em; }
   </style>
 
-  <rect class="card" x="0.5" y="0.5" width="399" height="267" rx="8"/>
-  <text class="title" x="22" y="34">Top Languages</text>
+  <line class="rule" x1="0" y1="1" x2="900" y2="1"/>
 
-  <g transform="translate(22,54)">
-    <g transform="translate(0,0)">
-      <text class="lbl" x="0" y="11">JavaScript</text>
-      <text class="pct" x="356" y="11" text-anchor="end">29.4%</text>
-      <rect class="track" x="0" y="18" width="356" height="9" rx="4.5"/>
-      <rect x="0" y="18" width="0" height="9" rx="4.5" fill="#f1e05a">
-        <animate attributeName="width" from="0" to="356" dur="1.1s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </g>
-    <g transform="translate(0,36)">
-      <text class="lbl" x="0" y="11">Python</text>
-      <text class="pct" x="356" y="11" text-anchor="end">23.9%</text>
-      <rect class="track" x="0" y="18" width="356" height="9" rx="4.5"/>
-      <rect x="0" y="18" width="0" height="9" rx="4.5" fill="#3572A5">
-        <animate attributeName="width" from="0" to="289" dur="1.1s" begin="0.12s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </g>
-    <g transform="translate(0,72)">
-      <text class="lbl" x="0" y="11">HTML</text>
-      <text class="pct" x="356" y="11" text-anchor="end">14.7%</text>
-      <rect class="track" x="0" y="18" width="356" height="9" rx="4.5"/>
-      <rect x="0" y="18" width="0" height="9" rx="4.5" fill="#e34c26">
-        <animate attributeName="width" from="0" to="178" dur="1.1s" begin="0.24s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </g>
-    <g transform="translate(0,108)">
-      <text class="lbl" x="0" y="11">GDScript</text>
-      <text class="pct" x="356" y="11" text-anchor="end">11.1%</text>
-      <rect class="track" x="0" y="18" width="356" height="9" rx="4.5"/>
-      <rect x="0" y="18" width="0" height="9" rx="4.5" fill="#355570">
-        <animate attributeName="width" from="0" to="134" dur="1.1s" begin="0.36s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </g>
-    <g transform="translate(0,144)">
-      <text class="lbl" x="0" y="11">CSS</text>
-      <text class="pct" x="356" y="11" text-anchor="end">8.7%</text>
-      <rect class="track" x="0" y="18" width="356" height="9" rx="4.5"/>
-      <rect x="0" y="18" width="0" height="9" rx="4.5" fill="#663399">
-        <animate attributeName="width" from="0" to="105" dur="1.1s" begin="0.48s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </g>
-    <g transform="translate(0,180)">
-      <text class="lbl" x="0" y="11">TypeScript</text>
-      <text class="pct" x="356" y="11" text-anchor="end">6.8%</text>
-      <rect class="track" x="0" y="18" width="356" height="9" rx="4.5"/>
-      <rect x="0" y="18" width="0" height="9" rx="4.5" fill="#3178c6">
-        <animate attributeName="width" from="0" to="82" dur="1.1s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </g>
+  <text class="kicker muted" x="0" y="28">LANGUAGE DISTRIBUTION</text>
+  <text class="kicker muted" x="900" y="28" text-anchor="end">PUBLIC REPOS</text>
+
+  <rect class="track" x="0" y="48" width="900" height="6" rx="3"/>
+
+  <g>
+    <rect x="0"     y="48" width="0" height="6" fill="#f1e05a"><animate attributeName="width" from="0" to="264.6" dur="0.9s" begin="0.00s" fill="freeze"/></rect>
+    <rect x="264.6" y="48" width="0" height="6" fill="#3572A5"><animate attributeName="width" from="0" to="215.1" dur="0.9s" begin="0.10s" fill="freeze"/></rect>
+    <rect x="479.7" y="48" width="0" height="6" fill="#e34c26"><animate attributeName="width" from="0" to="132.3" dur="0.9s" begin="0.20s" fill="freeze"/></rect>
+    <rect x="612.0" y="48" width="0" height="6" fill="#355570"><animate attributeName="width" from="0" to="99.9"  dur="0.9s" begin="0.30s" fill="freeze"/></rect>
+    <rect x="711.9" y="48" width="0" height="6" fill="#663399"><animate attributeName="width" from="0" to="78.3"  dur="0.9s" begin="0.40s" fill="freeze"/></rect>
+    <rect x="790.2" y="48" width="0" height="6" fill="#3178c6"><animate attributeName="width" from="0" to="61.2"  dur="0.9s" begin="0.50s" fill="freeze"/></rect>
+    <rect x="851.4" y="48" width="0" height="6" fill="#8b949e"><animate attributeName="width" from="0" to="48.6"  dur="0.9s" begin="0.60s" fill="freeze"/></rect>
   </g>
+
+  <g>
+    <rect x="0"   y="80" width="6" height="6" fill="#f1e05a"/><text class="leg muted" x="12"  y="86">JAVASCRIPT 29.4</text>
+    <rect x="129" y="80" width="6" height="6" fill="#3572A5"/><text class="leg muted" x="141" y="86">PYTHON 23.9</text>
+    <rect x="258" y="80" width="6" height="6" fill="#e34c26"/><text class="leg muted" x="270" y="86">HTML 14.7</text>
+    <rect x="387" y="80" width="6" height="6" fill="#355570"/><text class="leg muted" x="399" y="86">GDSCRIPT 11.1</text>
+    <rect x="516" y="80" width="6" height="6" fill="#663399"/><text class="leg muted" x="528" y="86">CSS 8.7</text>
+    <rect x="645" y="80" width="6" height="6" fill="#3178c6"/><text class="leg muted" x="657" y="86">TYPESCRIPT 6.8</text>
+    <rect x="774" y="80" width="6" height="6" fill="#8b949e"/><text class="leg muted" x="786" y="86">OTHER 5.4</text>
+  </g>
+
+  <line class="rule" x1="0" y1="112" x2="900" y2="112"/>
 </svg>

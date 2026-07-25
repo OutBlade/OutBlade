@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="Sebastian Kallfelz, semiconductor process engineering">
+  <style>
+    .ink   { fill: #0f1419; }
+    .muted { fill: #6b7280; }
+    .rule  { stroke: #d8dee4; stroke-width: 1; }
+    .scan  { fill: #0b3d91; }
+    @media (prefers-color-scheme: dark) {
+      .ink   { fill: #e6edf3; }
+      .muted { fill: #8b949e; }
+      .rule  { stroke: #30363d; }
+      .scan  { fill: #58a6ff; }
+    }
+    .kicker { font: 500 11px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.22em; }
+    .name   { font: 700 58px 'Helvetica Neue', Arial, sans-serif; letter-spacing: -1.6px; }
+    .sub    { font: 400 12px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.14em; }
+    .read   { font: 400 11px 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; letter-spacing: 0.12em; }
+  </style>
+
+  <line class="rule" x1="0" y1="1" x2="900" y2="1"/>
+
+  <text class="kicker muted" x="0" y="32">SEMICONDUCTOR PROCESS ENGINEERING</text>
+  <text class="kicker muted" x="900" y="32" text-anchor="end">KARLSRUHE / DE</text>
+
+  <!-- stepper scan pass -->
+  <g clip-path="url(#field)">
+    <rect class="scan" x="-140" y="52" width="120" height="118" opacity="0.06">
+      <animate attributeName="x" from="-140" to="900" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <rect class="scan" x="-22" y="52" width="1.5" height="118" opacity="0.45">
+      <animate attributeName="x" from="-22" to="1018" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <defs>
+    <clipPath id="field"><rect x="0" y="52" width="900" height="118"/></clipPath>
+  </defs>
+
+  <text class="name ink" x="0" y="126">SEBASTIAN KALLFELZ</text>
+
+  <text class="sub muted" x="0" y="160">KIT ETIT B.SC. &#160;/&#160; IMT KORVINK GROUP &#160;/&#160; LENZ LENS NMR</text>
+
+  <line class="rule" x1="0" y1="200" x2="900" y2="200"/>
+
+  <text class="read muted" x="0" y="226">
+    NODE 130 nm &#183; &#955; 365 nm &#183; D&#8320; 0.12 cm&#8315;&#178; &#183; Y 0.87
+  </text>
+  <text class="read muted" x="900" y="226" text-anchor="end">OPEN PDK &#183; SKY130</text>
+</svg>
