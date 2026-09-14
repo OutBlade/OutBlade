@@ -158,3 +158,76 @@ and conversational AI together for lithography, oxidation, implantation, defect 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:0B3D91&height=120&section=footer" width="100%" alt="footer" />
 
 </div>
+
+
+## Project directory
+
+Browse by subject. Forks and event archives are identified separately; each repository documents its own scope and setup.
+
+### Semiconductor & Physics
+
+| Project | What it does |
+| --- | --- |
+| [OutBlade/awesome-semiconductor-industry-topics](https://github.com/OutBlade/awesome-semiconductor-industry-topics) | A curated list of semiconductor industry resources, with a deliberate bias toward sub-10nm logic, lithography, process technology, and advanced packaging. |
+| [OutBlade/cms-hgcal-readout](https://github.com/OutBlade/cms-hgcal-readout) | ECON-D/T frame decoder and analysis toolkit for CMS HGCAL prototype readout (lpGBT chain, noise characterisation, VHDL firmware stubs) |
+| [OutBlade/elastocaloric-heat-pump](https://github.com/OutBlade/elastocaloric-heat-pump) | Low-cost elastocaloric heat pump research using polymer films — thermal/mechanical behavior, small-scale cooling demonstrator, and system performance optimization. |
+| [OutBlade/gds-inspector](https://github.com/OutBlade/gds-inspector) | GDSII layout analysis desktop app for nanofabrication: inspect layers, pattern density, critical dimensions, and design rules. |
+| [OutBlade/librelane-ppa](https://github.com/OutBlade/librelane-ppa) | Timing closure and PPA exploration for LibreLane/OpenROAD designs: slack-driven Fmax search, config sweeps, and critical-path attribution back to RTL modules. |
+| [OutBlade/litho-agent](https://github.com/OutBlade/litho-agent) | Semiconductor process calculators and a Claude-powered web agent for lithography, oxidation, ion implantation, and yield analysis. |
+| [OutBlade/lithoforge](https://github.com/OutBlade/lithoforge) | DIY semiconductor lithography toolkit for MSLA printers: mask design, OPC, process calculators, spacer lithography |
+| [OutBlade/semiyield](https://github.com/OutBlade/semiyield) | Python toolkit for semiconductor process simulation, machine-learning yield prediction, statistical process control, and experiment design. |
+
+### Games & Entertainment
+
+| Project | What it does |
+| --- | --- |
+| [OutBlade/aggressor-chess-web](https://github.com/OutBlade/aggressor-chess-web) | Browser chess game with a JavaScript AI engine, minimax search, alpha-beta pruning, and adjustable difficulty. |
+| [OutBlade/balatro-web](https://github.com/OutBlade/balatro-web) | Play the Balatro GBA fan demake instantly in your browser - no download, no install. Works on PC and mobile. |
+| [OutBlade/call-center-tycoon](https://github.com/OutBlade/call-center-tycoon) | Satirical tycoon simulation game for Windows, built with Electron: manage staff, upgrades, reputation, and escalating scrutiny. |
+| [OutBlade/neon-harbor](https://github.com/OutBlade/neon-harbor) | Open world neon city action game. Procedural city, car chases, five star wanted system. Godot 4.6, zero binary assets. |
+| [OutBlade/neon-pulse](https://github.com/OutBlade/neon-pulse) | A precision-dash roguelike in a neon-drenched void. Electron desktop app with launcher, 15 upgrades, procedural audio, and 15 achievements. |
+| [OutBlade/sudoku-online-download](https://github.com/OutBlade/sudoku-online-download) | Download page for the Sudoku Online Android app, with an APK, version metadata, and privacy information. |
+| [OutBlade/SudukoOnline](https://github.com/OutBlade/SudukoOnline) | Multiplayer Sudoku, TicTacToe, and board game platform for Android — Firebase real-time sync, league system, AI opponents |
+| [OutBlade/tichu-stats](https://github.com/OutBlade/tichu-stats) | Interactive Tichu statistics reference: bomb probabilities, Grand Tichu decisions, passing strategies, and source-linked tables. |
+
+### Tools & Utilities
+
+| Project | What it does |
+| --- | --- |
+| [OutBlade/claude-code-hooks](https://github.com/OutBlade/claude-code-hooks) | Safety hooks for Claude Code. Stops rm -rf, force-push to main, and API key commits before they happen. |
+| [OutBlade/electron-win-template](https://github.com/OutBlade/electron-win-template) | Electron starter template for Windows apps with NSIS installers, GitHub Releases, and automatic updates. |
+| [OutBlade/hackxplore-template](https://github.com/OutBlade/hackxplore-template) | HackXplore 2026 Starter Template: FastAPI + Streamlit + OpenCV + Anthropic |
+| [OutBlade/kit-campus-mcp](https://github.com/OutBlade/kit-campus-mcp) | MCP server for the KIT Campus portal: exam results, registrations, study progress, timetables, and module catalogues. |
+| [OutBlade/memecoin-freqtrade-bot](https://github.com/OutBlade/memecoin-freqtrade-bot) | Virtual paper-trading bot for memecoins on Freqtrade with real fees |
+| [OutBlade/mineblade](https://github.com/OutBlade/mineblade) | Free one-click Minecraft server hosting on your own machine |
+| [OutBlade/obsidian-vault-dashboard](https://github.com/OutBlade/obsidian-vault-dashboard) | Interactive Obsidian plugin: live vault stats, force-directed knowledge graph, tag cloud, and recently modified notes. |
+| [OutBlade/pgspy](https://github.com/OutBlade/pgspy) | Transparent PostgreSQL proxy with a live query dashboard, query timing, and N+1 detection for application development. |
+| [OutBlade/study-tutor](https://github.com/OutBlade/study-tutor) | Claude AI exam tutor as an Electron desktop app — per-module chats, PDF lecture upload with prompt caching, LaTeX rendering, exam question generator |
+
+### Math & Learning
+
+| Project | What it does |
+| --- | --- |
+| [OutBlade/dtZahlensysteme](https://github.com/OutBlade/dtZahlensysteme) | Number system converter & learning portal (DE/EN) — decimal, binary, octal, hex with step-by-step explanations |
+| [OutBlade/erdos-notes](https://github.com/OutBlade/erdos-notes) | Reproducible notes on Erdos problems 617, 835, 1221, and 550: partial results, statement corrections, and Lean proof audits. |
+| [OutBlade/mandelbrot-visualizer](https://github.com/OutBlade/mandelbrot-visualizer) | Interactive Mandelbrot set explorer for Windows — smooth zoom to 1000x+, automatic zoom video recording, color schemes, auto-updating Electron app |
+| [OutBlade/mathgpt-clone](https://github.com/OutBlade/mathgpt-clone) | Full-stack AI math solver clone: text/LaTeX/image input, step-by-step solutions, Google/Apple sign-in, consistent output via image hashing |
+
+### Web Platforms & Community
+
+| Project | What it does |
+| --- | --- |
+| [OutBlade/argus-digest](https://github.com/OutBlade/argus-digest) | Static news digest for semiconductor, AI, and software topics, with a searchable archive and installable web interface. |
+| [OutBlade/sudoku-online-privacy](https://github.com/OutBlade/sudoku-online-privacy) | German and English privacy-policy pages for the Sudoku Online Android app. |
+| [HACK-OPS-KA/Website](https://github.com/HACK-OPS-KA/Website) | hack//ops community website for karlsruhe: events, project archive, and a firebase-backed event voting system. |
+| [hackops-ka/hackops-site](https://github.com/hackops-ka/hackops-site) | hack//ops landing-page source for the karlsruhe builder community, with event information and project pages. |
+
+### Contribution Forks & Event Archives
+
+| Project | What it does |
+| --- | --- |
+| [OutBlade/balatro-gba](https://github.com/OutBlade/balatro-gba) | Fork of the Balatro Game Boy Advance fan demake: a homebrew card roguelike for GBA hardware and emulators. |
+| [OutBlade/erdosproblems](https://github.com/OutBlade/erdosproblems) | Contribution fork of the community Erdos problems database, tracking problem statements and mathematical status. |
+| [OutBlade/SLOPATHON](https://github.com/OutBlade/SLOPATHON) | Contribution fork of the HACK//OPS SLOPATHON OP001 project archive in Karlsruhe. |
+| [OutBlade/winget-pkgs](https://github.com/OutBlade/winget-pkgs) | Contribution fork of the Microsoft Windows Package Manager community repository for WinGet package manifests. |
+| [HACK-OPS-KA/SLOPATHON](https://github.com/HACK-OPS-KA/SLOPATHON) | Project archive for HACK//OPS SLOPATHON OP001 in Karlsruhe: experimental prototypes and team submissions. |
