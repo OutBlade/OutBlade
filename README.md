@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/banner-light.svg">
-  <img src="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/banner-light.svg" width="100%" alt="Sebastian Kallfelz: semiconductor process, lithography and yield, drawn as a chip layout">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/machine-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/machine-light.svg">
+  <img src="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/machine-light.svg" width="100%" alt="Sebastian Kallfelz. Animated cutaway of a High-NA EUV lithography scanner: a CO2 laser turns tin droplets into plasma, and its 13.5 nm light runs through mirrors from reticle to wafer.">
 </picture>
 
 <a href="https://www.linkedin.com/in/sebastian-kallfelz-9b86913b0"><img src="https://img.shields.io/badge/LinkedIn-Sebastian_Kallfelz-2f81f7?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b0f17" alt="LinkedIn"></a>
