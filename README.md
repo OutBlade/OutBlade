@@ -38,14 +38,14 @@ From RTL to readout: every step of the flow has a tool I built for it.
   <img src="https://raw.githubusercontent.com/OutBlade/OutBlade/main/profile/art/flow-light.svg" width="100%" alt="Process flow: design, layout, litho, process, yield, test, with one repository per step">
 </picture>
 
-| Step | Repository | What it does | |
-| :-- | :-- | :-- | :-- |
-| `01 DESIGN` | **[librelane-ppa](https://github.com/OutBlade/librelane-ppa)** | Timing closure and PPA exploration for LibreLane/OpenROAD: slack-driven Fmax search, config sweeps, critical-path attribution back to RTL modules. | <img src="https://img.shields.io/github/stars/OutBlade/librelane-ppa?style=flat-square&color=3fb950&labelColor=0b0f17" alt="stars"> |
-| `02 LAYOUT` | **[gds-inspector](https://github.com/OutBlade/gds-inspector)** | GDS/GDSII layout viewer for browser, VS Code and Cursor: 2D/3D views, KLayout layers, hierarchy and density analysis for ASIC and EBL. | <img src="https://img.shields.io/github/stars/OutBlade/gds-inspector?style=flat-square&color=2f81f7&labelColor=0b0f17" alt="stars"> |
-| `03 LITHO` | **[lithoforge](https://github.com/OutBlade/lithoforge)** | DIY lithography toolkit for MSLA printers: mask design, OPC, process calculators, spacer lithography. | <img src="https://img.shields.io/github/stars/OutBlade/lithoforge?style=flat-square&color=f85149&labelColor=0b0f17" alt="stars"> |
-| `04 PROCESS` | **[litho-agent](https://github.com/OutBlade/litho-agent)** | Process calculators plus a Claude-powered agent for lithography, oxidation, ion implantation and yield analysis. | <img src="https://img.shields.io/github/stars/OutBlade/litho-agent?style=flat-square&color=a371f7&labelColor=0b0f17" alt="stars"> |
-| `05 YIELD` | **[semiyield](https://github.com/OutBlade/semiyield)** | Process simulation, ML yield prediction, SPC and Bayesian DOE in one Python toolkit. [Live demo ↗](https://semiyield.streamlit.app) | <img src="https://img.shields.io/github/stars/OutBlade/semiyield?style=flat-square&color=e3b341&labelColor=0b0f17" alt="stars"> |
-| `06 TEST` | **[cms-hgcal-readout](https://github.com/OutBlade/cms-hgcal-readout)** | ECON-D/T frame decoder and noise characterisation for CMS HGCAL prototype readout (lpGBT chain, VHDL firmware stubs). | <img src="https://img.shields.io/github/stars/OutBlade/cms-hgcal-readout?style=flat-square&color=39c5cf&labelColor=0b0f17" alt="stars"> |
+| Step | Repository | What it does |
+| :-- | :-- | :-- |
+| <code>01&nbsp;DESIGN</code> | **[librelane-ppa](https://github.com/OutBlade/librelane-ppa)** | Timing closure and PPA exploration for LibreLane/OpenROAD: slack-driven Fmax search, config sweeps, critical-path attribution back to RTL modules. |
+| <code>02&nbsp;LAYOUT</code> | **[gds-inspector](https://github.com/OutBlade/gds-inspector)** | GDS/GDSII layout viewer for browser, VS Code and Cursor: 2D/3D views, KLayout layers, hierarchy and density analysis for ASIC and EBL. |
+| <code>03&nbsp;LITHO</code> | **[lithoforge](https://github.com/OutBlade/lithoforge)** | DIY lithography toolkit for MSLA printers: mask design, OPC, process calculators, spacer lithography. |
+| <code>04&nbsp;PROCESS</code> | **[litho-agent](https://github.com/OutBlade/litho-agent)** | Process calculators plus a Claude-powered agent for lithography, oxidation, ion implantation and yield analysis. |
+| <code>05&nbsp;YIELD</code> | **[semiyield](https://github.com/OutBlade/semiyield)** | Process simulation, ML yield prediction, SPC and Bayesian DOE in one Python toolkit. [Live demo ↗](https://semiyield.streamlit.app) |
+| <code>06&nbsp;TEST</code> | **[cms-hgcal-readout](https://github.com/OutBlade/cms-hgcal-readout)** | ECON-D/T frame decoder and noise characterisation for CMS HGCAL prototype readout (lpGBT chain, VHDL firmware stubs). |
 
 **Also on the line**
 
@@ -80,7 +80,7 @@ What I work on, top metal to substrate.
 
 ## 05 · Activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=OutBlade&bg_color=00000000&color=2F81F7&line=2F81F7&point=3FB950&area=true&area_color=2F81F7&hide_border=true" width="100%" alt="Contribution activity graph">
+<img src="https://ghchart.rshah.org/2f81f7/OutBlade" width="100%" alt="Contribution chart">
 
 <p align="center"><img src="./profile/top-langs.svg" width="400" alt="Top languages"></p>
 
