@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="262" viewBox="0 0 1200 262" role="img" aria-label="Process flow from design to test, one repository per step">
+<style>
+
+.sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
+.act { fill-opacity: 0; animation: act 12s linear infinite; }
+@keyframes act { 0% { fill-opacity: 0; } 1%,15% { fill-opacity: .16; } 17%,100% { fill-opacity: 0; } }
+.lot { animation: lot 12s ease-in-out infinite; }
+@keyframes lot { 0.00%,10.00% { transform: translateX(134.0px); opacity: 1; } 16.67%,26.67% { transform: translateX(329.0px); opacity: 1; } 33.33%,43.33% { transform: translateX(515.0px); opacity: 1; } 50.00%,60.00% { transform: translateX(701.0px); opacity: 1; } 66.67%,76.67% { transform: translateX(887.0px); opacity: 1; } 83.33%,93.33% { transform: translateX(1073.0px); opacity: 1; } 99% { transform: translateX(1133.0px); opacity: 0; } 100% { transform: translateX(134.0px); opacity: 0; } }
+.blink { animation: blink 1.2s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+</style>
+<rect x="1" y="1" width="1198" height="260" rx="14" fill="#0b0f17" stroke="#263248" stroke-width="1.5"/>
+<rect x="12" y="12" width="1176" height="238" rx="8" fill="none" stroke="#1b2536" stroke-dasharray="2 6"/>
+<path d="M15,22h14M22,15v14" stroke="#3b4658" stroke-width="1.5"/>
+<path d="M1171,22h14M1178,15v14" stroke="#3b4658" stroke-width="1.5"/>
+<path d="M15,240h14M22,233v14" stroke="#3b4658" stroke-width="1.5"/>
+<path d="M1171,240h14M1178,233v14" stroke="#3b4658" stroke-width="1.5"/>
+<text x="48" y="48" class="mono" font-size="13" fill="#8b949e" letter-spacing="1.5">PROCESS FLOW  ·  LOT OB-2026  ·  6 STEPS</text>
+<text x="1152" y="48" class="mono" font-size="12" fill="#3fb950" text-anchor="end" letter-spacing="1.5"><tspan class="blink">●</tspan> IN PROGRESS</text>
+<path d="M40,70 h178 l18,50.0 l-18,50.0 h-178 l0,-50.0 z" fill="#111826" stroke="#3fb950" stroke-width="1.5"/>
+<path class="act" style="animation-delay:0.0s" d="M40,70 h178 l18,50.0 l-18,50.0 h-178 l0,-50.0 z" fill="#3fb950"/>
+<text x="58" y="100" class="mono" font-size="12" fill="#3fb950">01</text>
+<text x="82" y="100" class="sans" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">DESIGN</text>
+<text x="58" y="128" class="mono" font-size="12.5" fill="#e6edf3">librelane-ppa</text>
+<text x="58" y="150" class="sans" font-size="12.5" fill="#8b949e">Fmax · PPA sweeps</text>
+<path d="M226,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#111826" stroke="#2f81f7" stroke-width="1.5"/>
+<path class="act" style="animation-delay:2.0s" d="M226,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#2f81f7"/>
+<text x="262" y="100" class="mono" font-size="12" fill="#2f81f7">02</text>
+<text x="286" y="100" class="sans" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">LAYOUT</text>
+<text x="262" y="128" class="mono" font-size="12.5" fill="#e6edf3">gds-inspector</text>
+<text x="262" y="150" class="sans" font-size="12.5" fill="#8b949e">GDSII · density · DRC</text>
+<path d="M412,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#111826" stroke="#f85149" stroke-width="1.5"/>
+<path class="act" style="animation-delay:4.0s" d="M412,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#f85149"/>
+<text x="448" y="100" class="mono" font-size="12" fill="#f85149">03</text>
+<text x="472" y="100" class="sans" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">LITHO</text>
+<text x="448" y="128" class="mono" font-size="12.5" fill="#e6edf3">lithoforge</text>
+<text x="448" y="150" class="sans" font-size="12.5" fill="#8b949e">masks · OPC · MSLA</text>
+<path d="M598,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#111826" stroke="#a371f7" stroke-width="1.5"/>
+<path class="act" style="animation-delay:6.0s" d="M598,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#a371f7"/>
+<text x="634" y="100" class="mono" font-size="12" fill="#a371f7">04</text>
+<text x="658" y="100" class="sans" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">PROCESS</text>
+<text x="634" y="128" class="mono" font-size="12.5" fill="#e6edf3">litho-agent</text>
+<text x="634" y="150" class="sans" font-size="12.5" fill="#8b949e">oxide · implant · etch</text>
+<path d="M784,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#111826" stroke="#e3b341" stroke-width="1.5"/>
+<path class="act" style="animation-delay:8.0s" d="M784,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#e3b341"/>
+<text x="820" y="100" class="mono" font-size="12" fill="#e3b341">05</text>
+<text x="844" y="100" class="sans" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">YIELD</text>
+<text x="820" y="128" class="mono" font-size="12.5" fill="#e6edf3">semiyield</text>
+<text x="820" y="150" class="sans" font-size="12.5" fill="#8b949e">ML yield · SPC · DOE</text>
+<path d="M970,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#111826" stroke="#39c5cf" stroke-width="1.5"/>
+<path class="act" style="animation-delay:10.0s" d="M970,70 h178 l18,50.0 l-18,50.0 h-178 l18,-50.0 z" fill="#39c5cf"/>
+<text x="1006" y="100" class="mono" font-size="12" fill="#39c5cf">06</text>
+<text x="1030" y="100" class="sans" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="1">TEST</text>
+<text x="1006" y="128" class="mono" font-size="12.5" fill="#e6edf3">cms-hgcal-readout</text>
+<text x="1006" y="150" class="sans" font-size="12.5" fill="#8b949e">ECON-D/T · noise</text>
+<line x1="134.0" y1="206" x2="1073.0" y2="206" stroke="#3b4658" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round"/>
+<line x1="134.0" y1="174" x2="134.0" y2="198" stroke="#1b2536"/>
+<circle cx="134.0" cy="206" r="4" fill="#0b0f17" stroke="#3fb950" stroke-width="1.5"/>
+<line x1="329.0" y1="174" x2="329.0" y2="198" stroke="#1b2536"/>
+<circle cx="329.0" cy="206" r="4" fill="#0b0f17" stroke="#2f81f7" stroke-width="1.5"/>
+<line x1="515.0" y1="174" x2="515.0" y2="198" stroke="#1b2536"/>
+<circle cx="515.0" cy="206" r="4" fill="#0b0f17" stroke="#f85149" stroke-width="1.5"/>
+<line x1="701.0" y1="174" x2="701.0" y2="198" stroke="#1b2536"/>
+<circle cx="701.0" cy="206" r="4" fill="#0b0f17" stroke="#a371f7" stroke-width="1.5"/>
+<line x1="887.0" y1="174" x2="887.0" y2="198" stroke="#1b2536"/>
+<circle cx="887.0" cy="206" r="4" fill="#0b0f17" stroke="#e3b341" stroke-width="1.5"/>
+<line x1="1073.0" y1="174" x2="1073.0" y2="198" stroke="#1b2536"/>
+<circle cx="1073.0" cy="206" r="4" fill="#0b0f17" stroke="#39c5cf" stroke-width="1.5"/>
+<g class="lot"><g transform="translate(0,206)"><circle r="13" fill="#111826" stroke="#58a6ff" stroke-width="2"/><path d="M-6,-6h12v12h-12zM-6,0h12M0,-6v12" fill="none" stroke="#58a6ff" stroke-width="1"/><circle cy="13" r="2.5" fill="#0b0f17"/></g></g>
+<text x="48" y="236" class="mono" font-size="11" fill="#8b949e">each step is a repository · details in the table below</text>
+
+</svg>

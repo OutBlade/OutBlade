@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="28" viewBox="0 0 1200 28" role="img" aria-label="section divider">
+<style>
+
+</style>
+<line x1="24" y1="14" x2="588" y2="14" stroke="#afb8c1" stroke-dasharray="2 6"/><line x1="612" y1="14" x2="1176" y2="14" stroke="#afb8c1" stroke-dasharray="2 6"/><path d="M6,14h12M12,8v12" stroke="#57606a" stroke-width="1.5"/><path d="M594,14h12M600,8v12" stroke="#57606a" stroke-width="1.5"/><path d="M1182,14h12M1188,8v12" stroke="#57606a" stroke-width="1.5"/>
+</svg>

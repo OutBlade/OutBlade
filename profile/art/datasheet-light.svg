@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-label="About Sebastian Kallfelz, formatted as an IC datasheet">
+<style>
+
+.sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
+.pin1 { animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+
+</style>
+<rect x="1" y="1" width="1198" height="738" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<rect x="12" y="12" width="1176" height="716" rx="8" fill="none" stroke="#e8edf2" stroke-dasharray="2 6"/>
+<path d="M15,22h14M22,15v14" stroke="#afb8c1" stroke-width="1.5"/>
+<path d="M1171,22h14M1178,15v14" stroke="#afb8c1" stroke-width="1.5"/>
+<path d="M15,718h14M22,711v14" stroke="#afb8c1" stroke-width="1.5"/>
+<path d="M1171,718h14M1178,711v14" stroke="#afb8c1" stroke-width="1.5"/>
+<text x="48" y="80" class="mono" font-size="34" font-weight="700" fill="#1f2328">SK-KIT26</text>
+<text x="252" y="80" class="mono" font-size="13" fill="#57606a">Rev. 2026.10</text>
+<text x="1152" y="62" class="sans" font-size="15" fill="#57606a" text-anchor="end">Microelectronics engineer · Process · Lithography · EDA</text>
+<text x="1152" y="86" class="mono" font-size="12" fill="#0969da" text-anchor="end" letter-spacing="2">DATASHEET · PRELIMINARY</text>
+<rect x="40" y="104" width="1120" height="3" fill="#0969da"/>
+
+<text x="48" y="148" class="mono" font-size="14" font-weight="700" fill="#0969da" letter-spacing="1">1  FEATURES</text>
+<rect x="50" y="176" width="9" height="9" fill="#1a7f37"/>
+<text x="70" y="186" class="sans" font-size="15" fill="#1f2328">ETIT B.Sc., Karlsruhe Institute of Technology (KIT)</text>
+<rect x="50" y="206" width="9" height="9" fill="#1a7f37"/>
+<text x="70" y="216" class="sans" font-size="15" fill="#1f2328">Research assistant, IMT · Korvink group</text>
+<rect x="50" y="236" width="9" height="9" fill="#cf222e"/>
+<text x="70" y="246" class="sans" font-size="15" fill="#1f2328">Superconducting Lenz-lens resonators for NMR</text>
+<rect x="50" y="266" width="9" height="9" fill="#cf222e"/>
+<text x="70" y="276" class="sans" font-size="15" fill="#1f2328">Process models: Deal–Grove, implantation, plasma etch</text>
+<rect x="50" y="296" width="9" height="9" fill="#0969da"/>
+<text x="70" y="306" class="sans" font-size="15" fill="#1f2328">Lithography: resolution, DoF, OPC, GDSII / e-beam</text>
+<rect x="50" y="326" width="9" height="9" fill="#0969da"/>
+<text x="70" y="336" class="sans" font-size="15" fill="#1f2328">Analog IC design on the SKY130 open PDK + ngspice</text>
+<rect x="50" y="356" width="9" height="9" fill="#8250df"/>
+<text x="70" y="366" class="sans" font-size="15" fill="#1f2328">ML yield prediction, SPC and Bayesian DOE</text>
+
+<text x="640" y="148" class="mono" font-size="14" font-weight="700" fill="#0969da" letter-spacing="1">2  PIN CONFIGURATION</text>
+<rect x="836" y="174" width="150" height="196" rx="6" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+<path d="M897.0,174 a14,14 0 0,0 28,0" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<circle class="pin1" cx="864" cy="196" r="4" fill="#1a7f37"/>
+<text transform="translate(917.0,272.0) rotate(-90)" class="mono" font-size="16" font-weight="700" fill="#1f2328" text-anchor="middle">SK-KIT26</text>
+<text x="911.0" y="394" class="mono" font-size="11" fill="#57606a" text-anchor="middle">DIP-12 · TOP VIEW</text>
+<rect x="814" y="195" width="22" height="10" fill="#afb8c1"/>
+<rect x="986" y="195" width="22" height="10" fill="#afb8c1"/>
+<text x="844" y="204" class="mono" font-size="11" fill="#57606a">1</text>
+<text x="978" y="204" class="mono" font-size="11" fill="#57606a" text-anchor="end">12</text>
+<text x="804" y="204" class="mono" font-size="12" fill="#1f2328" text-anchor="end">PYTHON</text>
+<text x="1018" y="204" class="mono" font-size="12" fill="#1f2328">SKY130</text>
+<rect x="814" y="224" width="22" height="10" fill="#afb8c1"/>
+<rect x="986" y="224" width="22" height="10" fill="#afb8c1"/>
+<text x="844" y="233" class="mono" font-size="11" fill="#57606a">2</text>
+<text x="978" y="233" class="mono" font-size="11" fill="#57606a" text-anchor="end">11</text>
+<text x="804" y="233" class="mono" font-size="12" fill="#1f2328" text-anchor="end">C++</text>
+<text x="1018" y="233" class="mono" font-size="12" fill="#1f2328">KLAYOUT</text>
+<rect x="814" y="253" width="22" height="10" fill="#afb8c1"/>
+<rect x="986" y="253" width="22" height="10" fill="#afb8c1"/>
+<text x="844" y="262" class="mono" font-size="11" fill="#57606a">3</text>
+<text x="978" y="262" class="mono" font-size="11" fill="#57606a" text-anchor="end">10</text>
+<text x="804" y="262" class="mono" font-size="12" fill="#1f2328" text-anchor="end">TYPESCRIPT</text>
+<text x="1018" y="262" class="mono" font-size="12" fill="#1f2328">OPENROAD</text>
+<rect x="814" y="282" width="22" height="10" fill="#afb8c1"/>
+<rect x="986" y="282" width="22" height="10" fill="#afb8c1"/>
+<text x="844" y="291" class="mono" font-size="11" fill="#57606a">4</text>
+<text x="978" y="291" class="mono" font-size="11" fill="#57606a" text-anchor="end">9</text>
+<text x="804" y="291" class="mono" font-size="12" fill="#1f2328" text-anchor="end">VHDL</text>
+<text x="1018" y="291" class="mono" font-size="12" fill="#1f2328">COMSOL</text>
+<rect x="814" y="311" width="22" height="10" fill="#afb8c1"/>
+<rect x="986" y="311" width="22" height="10" fill="#afb8c1"/>
+<text x="844" y="320" class="mono" font-size="11" fill="#57606a">5</text>
+<text x="978" y="320" class="mono" font-size="11" fill="#57606a" text-anchor="end">8</text>
+<text x="804" y="320" class="mono" font-size="12" fill="#1f2328" text-anchor="end">SPICE</text>
+<text x="1018" y="320" class="mono" font-size="12" fill="#1f2328">ANSYS</text>
+<rect x="814" y="340" width="22" height="10" fill="#afb8c1"/>
+<rect x="986" y="340" width="22" height="10" fill="#afb8c1"/>
+<text x="844" y="349" class="mono" font-size="11" fill="#57606a">6</text>
+<text x="978" y="349" class="mono" font-size="11" fill="#57606a" text-anchor="end">7</text>
+<text x="804" y="349" class="mono" font-size="12" fill="#1f2328" text-anchor="end">GDSII</text>
+<text x="1018" y="349" class="mono" font-size="12" fill="#1f2328">LATEX</text>
+
+<text x="48" y="428" class="mono" font-size="14" font-weight="700" fill="#0969da" letter-spacing="1">3  ELECTRICAL CHARACTERISTICS</text>
+<rect x="40" y="446" width="1120" height="32" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="56" y="467" class="mono" font-size="12" font-weight="700" fill="#57606a" letter-spacing="1">PARAMETER</text>
+<text x="428" y="467" class="mono" font-size="12" font-weight="700" fill="#57606a" letter-spacing="1">SYMBOL</text>
+<text x="568" y="467" class="mono" font-size="12" font-weight="700" fill="#57606a" letter-spacing="1">VALUE</text>
+<text x="928" y="467" class="mono" font-size="12" font-weight="700" fill="#57606a" letter-spacing="1">UNIT / NOTE</text>
+<line x1="40" y1="510" x2="1160" y2="510" stroke="#e8edf2"/>
+<text x="56" y="499" class="sans" font-size="14" fill="#1f2328">Operating location</text>
+<text x="428" y="499" class="mono" font-size="14" fill="#0969da">LOC</text>
+<text x="568" y="499" class="sans" font-size="14" fill="#1f2328">Karlsruhe, Germany</text>
+<text x="928" y="499" class="sans" font-size="14" fill="#57606a">—</text>
+<line x1="40" y1="542" x2="1160" y2="542" stroke="#e8edf2"/>
+<text x="56" y="531" class="sans" font-size="14" fill="#1f2328">Process window</text>
+<text x="428" y="531" class="mono" font-size="14" fill="#0969da">λ</text>
+<text x="568" y="531" class="sans" font-size="14" fill="#1f2328">Litho · Oxidation · Implant · Etch</text>
+<text x="928" y="531" class="sans" font-size="14" fill="#57606a">front-end</text>
+<line x1="40" y1="574" x2="1160" y2="574" stroke="#e8edf2"/>
+<text x="56" y="563" class="sans" font-size="14" fill="#1f2328">Design kit</text>
+<text x="428" y="563" class="mono" font-size="14" fill="#0969da">PDK</text>
+<text x="568" y="563" class="sans" font-size="14" fill="#1f2328">SkyWater SKY130</text>
+<text x="928" y="563" class="sans" font-size="14" fill="#57606a">130 nm</text>
+<line x1="40" y1="606" x2="1160" y2="606" stroke="#e8edf2"/>
+<text x="56" y="595" class="sans" font-size="14" fill="#1f2328">Simulation stack</text>
+<text x="428" y="595" class="mono" font-size="14" fill="#0969da">SIM</text>
+<text x="568" y="595" class="sans" font-size="14" fill="#1f2328">ngspice · COMSOL · Ansys</text>
+<text x="928" y="595" class="sans" font-size="14" fill="#57606a">multiphysics</text>
+<line x1="40" y1="638" x2="1160" y2="638" stroke="#e8edf2"/>
+<text x="56" y="627" class="sans" font-size="14" fill="#1f2328">Open-source output</text>
+<text x="428" y="627" class="mono" font-size="14" fill="#0969da">N_repo</text>
+<text x="568" y="627" class="sans" font-size="14" fill="#1f2328">30+</text>
+<text x="928" y="627" class="sans" font-size="14" fill="#57606a">repositories</text>
+<line x1="40" y1="670" x2="1160" y2="670" stroke="#e8edf2"/>
+<text x="56" y="659" class="sans" font-size="14" fill="#1f2328">Collaboration</text>
+<text x="428" y="659" class="mono" font-size="14" fill="#0969da">I_collab</text>
+<text x="568" y="659" class="sans" font-size="14" fill="#1f2328">Open</text>
+<text x="928" y="659" class="sans" font-size="14" fill="#57606a">EDA · process · tooling</text>
+
+<text x="48" y="710" class="mono" font-size="11" fill="#57606a">OutBlade · github.com/OutBlade</text>
+<text x="1152" y="710" class="mono" font-size="11" fill="#57606a" text-anchor="end">Page 1 of 1</text>
+
+</svg>
